@@ -5,7 +5,7 @@ import Home from "./pages"
 const App = () => {
   return (
     <Router>
-      <Home />
+      <Home title={"Honig"}/>
     </Router>
   );
 }
