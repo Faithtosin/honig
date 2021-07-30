@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container } from "../Common/Container";
+import { Container } from "../Common";
 import { GifText, GifTextItem, GifTextOverlayWrap, HeroAnimation } from "./HomeHeroAnimationElements";
 
 const HomeHeroAnimation = () => {

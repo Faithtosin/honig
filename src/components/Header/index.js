@@ -1,5 +1,5 @@
 import logoImage from "../../media/images/logo.png";
-import { Container } from "../Common/Container";
+import { Container } from "../Common";
 import {
 	HeaderTag,
 	TopBar,
@@ -18,14 +18,14 @@ import {
 } from "./HeaderElements";
 
 const menuItems = [
-	"home",
-	"about me",
-	"my services",
-	"shortcuts",
-	"faqs",
-	"coaching wisdom",
-	"testimonials",
-	"contact",
+	{ title: "home", to: "/" },
+	{ title: "about me", to: "/about-us" },
+	{ title: "my services", to: "/my-services" },
+	{ title: "shortcuts", to: "/" },
+	{ title: "faqs", to: "/" },
+	{ title: "coaching wisdom", to: "/" },
+	{ title: "testimonials", to: "/" },
+	{ title: "contact", to: "/contact-us" },
 ];
 
 const Header = () => {
@@ -54,10 +54,10 @@ const Header = () => {
 					<NavigationBar>
 						<Navigation>
 							<NavMenu>
-								{menuItems.map((item) => {
+								{menuItems.map((obj) => {
 									return (
-										<NavItem>
-											<NavItemLink>{item}</NavItemLink>
+										<NavItem key={obj.title}>
+											<NavItemLink to={obj.to}>{obj.title}</NavItemLink>
 										</NavItem>
 									);
 								})}

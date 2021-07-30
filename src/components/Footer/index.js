@@ -1,5 +1,5 @@
 import footerLogoImage from "../../media/images/foot-logo.png";
-import { Container } from "../Common/Container";
+import { Container } from "../Common";
 import {
 	FooterAddress,
 	FooterCopyright,
@@ -20,7 +20,7 @@ const Footer = () => {
 					<FooterRow>
 						<FooterLogo src={footerLogoImage} />
 						{address.map((item) => {
-							return <FooterAddress>{item}</FooterAddress>;
+							return <FooterAddress key={item}>{item}</FooterAddress>;
 						})}
 					</FooterRow>
 				</Container>

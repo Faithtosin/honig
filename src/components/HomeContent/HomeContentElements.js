@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const ContentWrap = styled.div``;
 
@@ -77,12 +78,7 @@ export const Strong = styled.strong`
 	font-size: 16px;
 `;
 
-export const Link = styled.a`
+export const Link = styled(LinkRouter)`
   text-decoration: underline;
   color: #388bff!important;
-`;
-
-export const AboutLink = styled.div`
-  padding: 29px 0;
-  text-align: center;
 `;

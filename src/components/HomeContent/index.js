@@ -1,4 +1,4 @@
-import { Container } from "../Common/Container";
+import { ContactBottomLink, Container } from "../Common";
 import {
 	ContentWrap,
 	H2,
@@ -12,7 +12,6 @@ import {
 	ListElement,
 	Strong,
 	Link,
-	AboutLink,
 } from "./HomeContentElements";
 
 const HomeContent = () => {
@@ -56,13 +55,13 @@ const HomeContent = () => {
 							<Bdot>
 								<List>
 									<ListElement>
-										<Link to="">Thoughts on “Why Businesses Fall Short of their Potential“</Link>
+										<Link to="/">Thoughts on “Why Businesses Fall Short of their Potential“</Link>
 									</ListElement>
 									<ListElement>
-										<Link to="">Services</Link>
+										<Link to="/">Services</Link>
 									</ListElement>
 									<ListElement>
-										<Link to="">FAQs</Link>
+										<Link to="/">FAQs</Link>
 									</ListElement>
 								</List>
 							</Bdot>
@@ -70,9 +69,7 @@ const HomeContent = () => {
 								Then let’s have a short, confidential conversation, at no obligation, so I can learn what your
 								challenges are and suggest the ways I could help.
 							</Paragraph>
-							<AboutLink>
-								<Link to="">Click here if you would like to start a conversation now</Link>
-							</AboutLink>
+							<ContactBottomLink />
 						</ContentElement>
 					</TextWrap>
 				</Container>
