@@ -17,9 +17,6 @@ export const HeroAnimation = styled.div`
 			opacity: 1;
 		}
 	}
-
-	box-sizing: border-box;
-	width: 100%;
 `;
 
 export const GifTextOverlayWrap = styled.div``;

@@ -1,23 +1,13 @@
 import EcoBanner from "../EcoBanner";
 import coachingWisdomImg from "../../media/images/Coaching-Wisdom-Copy-1.jpg";
 import portraitImage from "../../media/images/Terrace-with-trees-684x1024.jpg";
-import { ContactBottomLink, Content } from "../Common";
-import {
-	AboutTitle,
-	H2,
-	ImageWrapper,
-	MainContent,
-	Paragraph,
-	PortraitImage,
-	TextWrapper,
-} from "./AboutUsContentElement";
+import { ReuseableLink, Content, ContentTitle, Paragraph, MainContent } from "../Common";
+import { ImageWrapper, PortraitImage, TextWrapper } from "./AboutUsContentElements";
 
 const AboutUsContent = () => {
 	const contents = (
 		<>
-			<AboutTitle>
-				<H2>Helping Companies Beat Their Business Challenges</H2>
-			</AboutTitle>
+			<ContentTitle title={"Helping Companies Beat Their Business Challenges"} />
 			<MainContent>
 				<ImageWrapper>
 					<PortraitImage src={portraitImage} />
@@ -49,7 +39,7 @@ const AboutUsContent = () => {
 					</Paragraph>
 				</TextWrapper>
 			</MainContent>
-      <ContactBottomLink />
+			<ReuseableLink text={"Click here if you would like to start a conversation now"} link={"/contact-us"} />
 		</>
 	);
 

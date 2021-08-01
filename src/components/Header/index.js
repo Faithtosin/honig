@@ -21,10 +21,10 @@ const menuItems = [
 	{ title: "home", to: "/" },
 	{ title: "about me", to: "/about-us" },
 	{ title: "my services", to: "/my-services" },
-	{ title: "shortcuts", to: "/" },
-	{ title: "faqs", to: "/" },
-	{ title: "coaching wisdom", to: "/" },
-	{ title: "testimonials", to: "/" },
+	{ title: "shortcuts", to: "#" },
+	{ title: "faqs", to: "/faq" },
+	{ title: "coaching wisdom", to: "/coaching-wisdom" },
+	{ title: "testimonials", to: "/testimonials" },
 	{ title: "contact", to: "/contact-us" },
 ];
 

@@ -1,6 +1,6 @@
 import Content from "./Content";
-import ContactBottomLink from "./ContactBottomLink";
+import ReuseableLink from "./ReusableLink";
+import ContentTitle from "./ContentTitle";
 
-export { Container } from "./Common";
-export { Content };
-export { ContactBottomLink };
+export { Container, Paragraph, MainContent, Link, QuoteImage, H3 } from "./Common";
+export { Content, ReuseableLink, ContentTitle };

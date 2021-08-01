@@ -1,4 +1,4 @@
-import { EcoBannerTitle, EcoBannerTitleWrap, EcoBannerWrap } from "./EcoBanner";
+import { EcoBannerTitle, EcoBannerTitleWrap, EcoBannerWrap } from "./EcoBannerElements";
 
 const EcoBanner = ({ imageUrl, title }) => {
 	return (

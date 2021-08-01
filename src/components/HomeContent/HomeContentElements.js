@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
 
 export const ContentWrap = styled.div``;
 
@@ -36,15 +35,6 @@ export const StrongTitle = styled.strong`
 
 export const ContentElement = styled.div``;
 
-export const Paragraph = styled.p`
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: 0.2px;
-	font-size: 16px;
-	margin-top: 0;
-	margin-bottom: 1rem;
-`;
-
 export const Bdot = styled.div`
 	margin-bottom: 30px;
 `;
@@ -76,9 +66,4 @@ export const Strong = styled.strong`
 	letter-spacing: 0.2px;
 	line-height: 20px;
 	font-size: 16px;
-`;
-
-export const Link = styled(LinkRouter)`
-  text-decoration: underline;
-  color: #388bff!important;
 `;

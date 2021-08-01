@@ -1,4 +1,4 @@
-import { ContactBottomLink, Container } from "../Common";
+import { ReuseableLink, Container, Paragraph, Link } from "../Common";
 import {
 	ContentWrap,
 	H2,
@@ -6,12 +6,10 @@ import {
 	TextWrap,
 	H4,
 	ContentElement,
-	Paragraph,
 	Bdot,
 	List,
 	ListElement,
 	Strong,
-	Link,
 } from "./HomeContentElements";
 
 const HomeContent = () => {
@@ -69,7 +67,7 @@ const HomeContent = () => {
 								Then let’s have a short, confidential conversation, at no obligation, so I can learn what your
 								challenges are and suggest the ways I could help.
 							</Paragraph>
-							<ContactBottomLink />
+							<ReuseableLink text={"Click here if you would like to start a conversation now"} link={"/contact-us"} />
 						</ContentElement>
 					</TextWrap>
 				</Container>

@@ -36,7 +36,7 @@ export const LinkedInIconWrap = styled.div`
 	min-height: 30px;
 	height: 30px;
 	display: flex;
-  align-self: center;
+	align-self: center;
 `;
 
 export const LinkedInIcon = styled(LinkedinIn)`
@@ -47,56 +47,60 @@ export const LinkedInIcon = styled(LinkedinIn)`
 export const SearchIcon = styled(Search)`
 	width: auto;
 	height: 14px;
-  color: #487e04;
+	color: #487e04;
 `;
 
 export const SearchButton = styled.button`
-  cursor: pointer;
-  background: transparent none repeat scroll 0 0;
-  width: 40px;
-  border: 0;
+	cursor: pointer;
+	background: transparent none repeat scroll 0 0;
+	width: 40px;
+	border: 0;
 `;
 
-export const NavigationBar = styled.div``;
+export const NavigationBar = styled.div`
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+`;
 
 export const Navigation = styled.nav``;
 
 export const NavMenu = styled.ul`
-  background-color: #acacac;
-  display: flex;
-  justify-content: space-between;
+	background-color: #acacac;
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
 `;
 
 export const NavItem = styled.li`
-  background-color: #acacac;
-  list-style: none;
-  padding: 25px 0;
+	background-color: #acacac;
+	list-style: none;
+	padding: 25px 0;
 
-  @media screen and (min-width: 1200px) {
-    padding: 15px 0;
+	@media screen and (min-width: 1200px) {
+		padding: 15px 0;
 	}
 
-  &:hover {
-    background-color: #fff;
-    transition: all 0.5s ease;
-  }
+	&:hover {
+		background-color: #fff;
+		transition: all 0.5s ease;
+	}
 `;
 
 export const NavItemLink = styled(LinkRouter)`
-  padding: 25px 16px;
-  color: #fff!important;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+	padding: 25px 16px;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
 
 	@media screen and (min-width: 1200px) {
-    padding: 15px 28px;
+		padding: 15px 28px;
 	}
 
-  &:hover {
-    color: #388bff!important;
-    transition: all 0.5s ease;
-  }
+	&:hover {
+		color: #388bff !important;
+		transition: all 0.5s ease;
+	}
 `;

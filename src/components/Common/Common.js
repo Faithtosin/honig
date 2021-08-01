@@ -43,7 +43,56 @@ export const Link = styled(LinkRouter)`
   color: #388bff!important;
 `;
 
-export const ContactLink = styled.div`
+export const LinkWrapper = styled.div`
   padding: 29px 0;
   text-align: center;
+`;
+
+export const Title = styled.div`
+	margin-bottom: 35px;
+`;
+
+export const H2 = styled.h2`
+	display: block;
+	color: #388bff !important;
+	font-weight: 300 !important;
+	text-align: center;
+	font-size: 38px;
+	text-transform: inherit;
+	letter-spacing: 0.2px;
+	line-height: 37px;
+	font-style: normal;
+`;
+
+export const H3 = styled.h3`
+	line-height: 30px;
+	letter-spacing: 0.2px;
+	text-transform: capitalize;
+	font-size: 24px;
+	margin: 0px 0px 8px 0px;
+	color: #388bff !important;
+	font-weight: bold !important;
+`;
+
+export const Paragraph = styled.p`
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	font-size: 16px;
+	margin-bottom: 1rem;
+`;
+
+export const MainContent = styled.div`
+	display: flex;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+`;
+
+export const QuoteImage = styled.img`
+	float: right;
+  @media screen and (max-width: 768px) {
+		max-width: 223px;
+	}
 `;
