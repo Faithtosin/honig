@@ -1,5 +1,6 @@
 import logoImage from "../../media/images/logo.png";
 import { Container } from "../Common";
+import { useLocation } from "react-router";
 import {
 	HeaderTag,
 	TopBar,
@@ -29,6 +30,8 @@ const menuItems = [
 ];
 
 const Header = () => {
+	const activeStyle = { backgroundColor: "#000" };
+	const { pathname } = useLocation();
 	return (
 		<>
 			<HeaderTag>
@@ -54,10 +57,12 @@ const Header = () => {
 					<NavigationBar>
 						<Navigation>
 							<NavMenu>
-								{menuItems.map((obj) => {
+								{menuItems.map(({ title, to }) => {
 									return (
-										<NavItem key={obj.title}>
-											<NavItemLink to={obj.to}>{obj.title}</NavItemLink>
+										<NavItem key={title}>
+											<NavItemLink activeStyle={pathname === to && pathname !== "/" ? activeStyle : {}} to={to}>
+												{title}
+											</NavItemLink>
 										</NavItem>
 									);
 								})}

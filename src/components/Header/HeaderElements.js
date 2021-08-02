@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
+import { NavLink as LinkRouter } from "react-router-dom";
 import { LinkedinIn } from "@styled-icons/fa-brands";
 import { Search } from "@styled-icons/evaicons-solid";
 
@@ -68,7 +68,8 @@ export const Navigation = styled.nav``;
 export const NavMenu = styled.ul`
 	background-color: #acacac;
 	display: flex;
-	justify-content: space-between;
+	width: fit-content;
+	margin: auto;
 	list-style: none;
 `;
 
