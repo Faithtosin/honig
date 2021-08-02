@@ -29,23 +29,23 @@ export const Container = styled.div`
 `;
 
 export const ContentWrap = styled.div`
-  padding-top: 50px;
-  width: 100%;
+	padding-top: 50px;
+	width: 100%;
 `;
 
 export const ContentInnerWrap = styled.div`
-  padding: 0 15px;
-  min-height: 1px;
+	padding: 0 15px;
+	min-height: 1px;
 `;
 
 export const Link = styled(LinkRouter)`
-  text-decoration: underline;
-  color: #388bff!important;
+	text-decoration: underline;
+	color: #388bff !important;
 `;
 
 export const LinkWrapper = styled.div`
-  padding: 29px 0;
-  text-align: center;
+	padding: 29px 0;
+	text-align: center;
 `;
 
 export const Title = styled.div`
@@ -92,7 +92,38 @@ export const MainContent = styled.div`
 
 export const QuoteImage = styled.img`
 	float: right;
-  @media screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		max-width: 223px;
+	}
+`;
+
+export const ListWrap = styled.div`
+	margin-left: 10px;
+`;
+
+export const OrderedList = styled.ol`
+	list-style: none;
+`;
+
+export const ListElement = styled.li`
+	display: flex;
+	line-height: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	counter-increment: my-awesome-counter;
+
+	&:before {
+		content: counter(my-awesome-counter);
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 12px;
+		background: #388bff;
+		border-radius: 100%;
+		padding: 1px 4.5px;
+		margin-right: 15px;
+		max-height: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 `;

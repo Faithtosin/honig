@@ -6,6 +6,7 @@ import FAQContent from "../components/FAQContent";
 const FAQ = ({ title }) => {
 	useEffect(() => {
 		document.title = title;
+		window.scrollTo(0, 0);
 	}, [title]);
 
 	return (

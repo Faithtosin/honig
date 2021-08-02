@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink as LinkRouter } from "react-router-dom";
 import { LinkedinIn } from "@styled-icons/fa-brands";
 import { Search } from "@styled-icons/evaicons-solid";
+import { DropDownWrapper } from "../DropDown/DropDownElements";
 
 export const HeaderTag = styled.header``;
 
@@ -63,8 +64,6 @@ export const NavigationBar = styled.div`
 	}
 `;
 
-export const Navigation = styled.nav``;
-
 export const NavMenu = styled.ul`
 	background-color: #acacac;
 	display: flex;
@@ -76,15 +75,15 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
 	background-color: #acacac;
 	list-style: none;
-	padding: 25px 0;
-
-	@media screen and (min-width: 1200px) {
-		padding: 15px 0;
-	}
 
 	&:hover {
 		background-color: #fff;
-		transition: all 0.5s ease;
+		transition: background-color 0.5s ease;
+		text-shadow: 1px 1px 4px #acacac;
+	}
+
+	&:hover ${DropDownWrapper} {
+		display: block;
 	}
 `;
 
@@ -94,6 +93,7 @@ export const NavItemLink = styled(LinkRouter)`
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 600;
+	display: inline-block;
 	text-decoration: none;
 
 	@media screen and (min-width: 1200px) {

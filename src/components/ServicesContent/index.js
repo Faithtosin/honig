@@ -1,8 +1,18 @@
 import EcoBanner from "../EcoBanner";
 import coachingWisdomImg from "../../media/images/Coaching-Wisdom-Copy-1.jpg";
 import quoteImage from "../../media/images/quote1.jpg";
-import { ReuseableLink, Content, ContentTitle, MainContent, Paragraph, QuoteImage } from "../Common";
-import { Iframe, ListElement, ListWrap, OrderedList, VideoWrapper } from "./ServicesContentElements";
+import {
+	ReuseableLink,
+	Content,
+	ContentTitle,
+	MainContent,
+	Paragraph,
+	QuoteImage,
+	ListElement,
+	ListWrap,
+	OrderedList,
+} from "../Common";
+import { Iframe, VideoWrapper } from "./ServicesContentElements";
 
 const ServicesContent = () => {
 	const contents = (
@@ -70,7 +80,7 @@ const ServicesContent = () => {
 					<Iframe
 						width="900"
 						height="506"
-						src="https://www.youtube.com/embed/oHDq1PcYkT4"
+						src="https://www.youtube.com/embed/oHDq1PcYkT4?autoplay=1"
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

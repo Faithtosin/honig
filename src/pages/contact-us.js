@@ -6,6 +6,7 @@ import ContactUsContent from "../components/ContactUsContent";
 const ContactUs = ({ title }) => {
 	useEffect(() => {
 		document.title = title;
+		window.scrollTo(0, 0);
 	}, [title]);
 
 	return (

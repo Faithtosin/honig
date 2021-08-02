@@ -6,6 +6,7 @@ import AboutUsContent from "../components/AboutUsContent";
 const About = ({ title }) => {
 	useEffect(() => {
 		document.title = title;
+		window.scrollTo(0, 0);
 	}, [title]);
 
 	return (
