@@ -119,11 +119,45 @@ export const ListElement = styled.li`
 		font-size: 12px;
 		background: #388bff;
 		border-radius: 100%;
-		padding: 1px 4.5px;
+		padding: 0 4px;
 		margin-right: 15px;
 		max-height: 16px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+`;
+
+export const ImageWrapper = styled.div`
+	margin-bottom: 35px;
+`;
+
+export const Image = styled.img`
+	width: 100%;
+	height: auto;
+`;
+
+export const Bdot = styled.div`
+	margin-bottom: 30px;
+`;
+
+export const List = styled.ul`
+	font-size: 16px;
+	margin-left: 20px;
+	padding-left: 15px;
+`;
+
+export const ListElementDot = styled.li`
+	line-height: 20px;
+	margin-bottom: 5px;
+	list-style: none;
+
+	&:before {
+		content: "●";
+		color: #388bff;
+		font-weight: bold;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
 	}
 `;

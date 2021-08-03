@@ -35,31 +35,6 @@ export const StrongTitle = styled.strong`
 
 export const ContentElement = styled.div``;
 
-export const Bdot = styled.div`
-	margin-bottom: 30px;
-`;
-
-export const List = styled.ul`
-	font-size: 16px;
-	margin-left: 20px;
-	padding-left: 15px;
-`;
-
-export const ListElement = styled.li`
-	line-height: 20px;
-	margin-bottom: 5px;
-	list-style: none;
-
-	&:before {
-		content: "●";
-		color: #388bff;
-		font-weight: bold;
-		display: inline-block;
-		width: 1em;
-		margin-left: -1em;
-	}
-`;
-
 export const Strong = styled.strong`
 	color: #388bff !important;
 	font-weight: 700;

@@ -2,8 +2,7 @@ import EcoBanner from "../EcoBanner";
 import coachingWisdomImg from "../../media/images/Coaching-Wisdom-Copy-1.jpg";
 import icebergOfIgnorancePDF from "../../media/pdf/The-Iceberg-of-Ignorance-BobbyAlbert.pdf";
 import quoteImage from "../../media/images/quote4-298x300.jpg";
-import { ReuseableLink, Content, ContentTitle, MainContent, Paragraph, QuoteImage } from "../Common";
-import { ImageWrapper, Image } from "./CoachingWisdomContentElements";
+import { ReuseableLink, Content, ContentTitle, MainContent, Paragraph, QuoteImage, ImageWrapper, Image } from "../Common";
 
 const CoachingWisdomContent = () => {
 	const style = { marginBottom: "8px" };

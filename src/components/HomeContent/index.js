@@ -1,16 +1,5 @@
-import { ReuseableLink, Container, Paragraph, Link } from "../Common";
-import {
-	ContentWrap,
-	H2,
-	StrongTitle,
-	TextWrap,
-	H4,
-	ContentElement,
-	Bdot,
-	List,
-	ListElement,
-	Strong,
-} from "./HomeContentElements";
+import { ReuseableLink, Container, Paragraph, Link, Bdot, List, ListElementDot } from "../Common";
+import { ContentWrap, H2, StrongTitle, TextWrap, H4, ContentElement, Strong } from "./HomeContentElements";
 
 const HomeContent = () => {
 	return (
@@ -35,14 +24,14 @@ const HomeContent = () => {
 							</Paragraph>
 							<Bdot>
 								<List>
-									<ListElement>
+									<ListElementDot>
 										Cash was tight, and they were losing money…hiring a consultant seemed utterly out of the question.
-									</ListElement>
-									<ListElement>
+									</ListElementDot>
+									<ListElementDot>
 										They could not imagine what a complete outsider would have to contribute since they knew their
 										business best.
-									</ListElement>
-									<ListElement>Things were just too chaotic to give this even a thought.</ListElement>
+									</ListElementDot>
+									<ListElementDot>Things were just too chaotic to give this even a thought.</ListElementDot>
 								</List>
 							</Bdot>
 							<Paragraph>
@@ -52,15 +41,15 @@ const HomeContent = () => {
 							</Paragraph>
 							<Bdot>
 								<List>
-									<ListElement>
+									<ListElementDot>
 										<Link to="/">Thoughts on “Why Businesses Fall Short of their Potential“</Link>
-									</ListElement>
-									<ListElement>
+									</ListElementDot>
+									<ListElementDot>
 										<Link to="/">Services</Link>
-									</ListElement>
-									<ListElement>
+									</ListElementDot>
+									<ListElementDot>
 										<Link to="/">FAQs</Link>
-									</ListElement>
+									</ListElementDot>
 								</List>
 							</Bdot>
 							<Paragraph>
