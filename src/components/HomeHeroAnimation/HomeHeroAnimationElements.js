@@ -31,7 +31,6 @@ export const GifTextItem = styled.p`
 	font-size: 20px;
 	letter-spacing: 0.2px;
 	color: #fff;
-	line-height: 100px;
 	padding: 40px 0;
 	text-align: center;
 	opacity: 0;
