@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4e2ac23b.chunk.css",
+    "main.js": "/static/js/main.fca9bd3b.chunk.js",
+    "main.js.map": "/static/js/main.fca9bd3b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.67cce7cd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.67cce7cd.js.map",
+    "static/js/2.bc9ba36b.chunk.js": "/static/js/2.bc9ba36b.chunk.js",
+    "static/js/2.bc9ba36b.chunk.js.map": "/static/js/2.bc9ba36b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.4e2ac23b.chunk.css.map": "/static/css/main.4e2ac23b.chunk.css.map",
+    "static/js/2.bc9ba36b.chunk.js.LICENSE.txt": "/static/js/2.bc9ba36b.chunk.js.LICENSE.txt",
+    "static/media/Coaching-Wisdom-Copy-1.c7cef7f5.jpg": "/static/media/Coaching-Wisdom-Copy-1.c7cef7f5.jpg",
+    "static/media/Terrace-with-trees-684x1024.5f9de398.jpg": "/static/media/Terrace-with-trees-684x1024.5f9de398.jpg",
+    "static/media/The-Iceberg-of-Ignorance-BobbyAlbert.ab414740.pdf": "/static/media/The-Iceberg-of-Ignorance-BobbyAlbert.ab414740.pdf",
+    "static/media/Why-Is-Your-Company-in-or-Headed-to-Work-out.a4d7b2ca.jpg": "/static/media/Why-Is-Your-Company-in-or-Headed-to-Work-out.a4d7b2ca.jpg",
+    "static/media/eco_innerpage_banner_bg.d58ce6ab.jpg": "/static/media/eco_innerpage_banner_bg.d58ce6ab.jpg",
+    "static/media/foot-logo.a021d47f.png": "/static/media/foot-logo.a021d47f.png",
+    "static/media/home-blue-10-800.08bfcb44.gif": "/static/media/home-blue-10-800.08bfcb44.gif",
+    "static/media/quote-TAA.2250f261.jpg": "/static/media/quote-TAA.2250f261.jpg",
+    "static/media/quote1.9db11d8f.jpg": "/static/media/quote1.9db11d8f.jpg",
+    "static/media/quote2.5305ef30.jpg": "/static/media/quote2.5305ef30.jpg",
+    "static/media/quote3.24df7d3a.jpg": "/static/media/quote3.24df7d3a.jpg",
+    "static/media/quote4-298x300.85b554f5.jpg": "/static/media/quote4-298x300.85b554f5.jpg",
+    "static/media/quotee.bea53ac9.png": "/static/media/quotee.bea53ac9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67cce7cd.js",
+    "static/js/2.bc9ba36b.chunk.js",
+    "static/css/main.4e2ac23b.chunk.css",
+    "static/js/main.fca9bd3b.chunk.js"
+  ]
+}
