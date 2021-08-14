@@ -14,17 +14,33 @@ import {
 	Bdot,
 	ListElementDot,
 	List,
+	VideoWrapper,
+	Iframe,
 } from "../Common";
 
 const TheAffordableAdvisorContent = () => {
 	const contents = (
 		<>
-			<ContentTitle style={{ marginBottom: "8px" }} title={"TAA Program Is A Three Step Process:"} />
-			<Paragraph></Paragraph>
 			<MainContent style={{ display: "block" }}>
+				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
+					<VideoWrapper style={{ marginBottom: "35px" }}>
+						<Iframe
+							width="900"
+							height="506"
+							src="https://www.youtube.com/embed/UAUgacN-5QA?rel=0&amp;modestbranding=1&amp;controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+							allowfullscreen
+						></Iframe>
+					</VideoWrapper>
+				</div>
+				<ContentTitle style={{ marginBottom: "8px" }} title={"TAA Program Is A Three Step Process:"} />
 				<ListWrap style={{ margin: "0" }}>
 					<OrderedList>
-						<QuoteImage src={quoteImage} />
+						<Paragraph>
+							<QuoteImage src={quoteImage} />
+						</Paragraph>
 						<ListElement>The Enterprise Examination</ListElement>
 						<ListElement>A Presentation and Discussion with the CEO and their team</ListElement>
 						<ListElement>An Implementation Plan and Periodic Consultation</ListElement>
@@ -147,7 +163,7 @@ const TheAffordableAdvisorContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" /> */}
 			<Content prop={contents} />
 		</>
 	);

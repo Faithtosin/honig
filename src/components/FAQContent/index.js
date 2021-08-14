@@ -1,17 +1,17 @@
 import EcoBanner from "../EcoBanner";
 import coachingWisdomImg from "../../media/images/Coaching-Wisdom-Copy-1.jpg";
-import { ReuseableLink, Content, ContentTitle, Paragraph, MainContent } from "../Common";
+import { ReuseableLink, Content, ContentTitle, Paragraph, MainContent, H4, VideoWrapper, Iframe } from "../Common";
 import Accordion from "../Accordion";
 
 const FAQContent = () => {
 	const accordionData = [
 		{
 			title: (
-				<h4>
+				<H4>
 					<strong>Question: </strong>I’ve heard the term but am not really familiar with “Turnaround” Consultants. What
 					should I look for, and how should I choose one? And although I am paying the Turnaround Consultant, is he or
 					she really working for the Lender or for me?
-				</h4>
+				</H4>
 			),
 			content: (
 				<>
@@ -39,10 +39,10 @@ const FAQContent = () => {
 		},
 		{
 			title: (
-				<h4>
+				<H4>
 					<strong>Question: </strong>Instead Of dealing with all the pressures from my current lender, why shouldn’t I
 					simply look to refinance with another lender?
-				</h4>
+				</H4>
 			),
 			content: (
 				<>
@@ -62,9 +62,9 @@ const FAQContent = () => {
 		},
 		{
 			title: (
-				<h4>
+				<H4>
 					<strong>Question: </strong>Why should I hire a turnaround consultant when I am or will soon be short of cash?
-				</h4>
+				</H4>
 			),
 			content: (
 				<>
@@ -82,10 +82,10 @@ const FAQContent = () => {
 		},
 		{
 			title: (
-				<h4>
+				<H4>
 					<strong>Question: </strong>What differentiates the Turnaround Solution Program from The Affordable Advisor
 					Program?
-				</h4>
+				</H4>
 			),
 			content: (
 				<>
@@ -99,9 +99,9 @@ const FAQContent = () => {
 		},
 		{
 			title: (
-				<h4>
+				<H4>
 					<strong>Question: </strong>What do your services cost, and what's the typical length of engagement
-				</h4>
+				</H4>
 			),
 			content: (
 				<>
@@ -132,8 +132,21 @@ const FAQContent = () => {
 	];
 	const contents = (
 		<>
-			<ContentTitle title={"Some Frequently Asked Questions"} />
 			<MainContent style={{ flexDirection: "column" }}>
+				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
+					<VideoWrapper style={{ marginBottom: "35px" }}>
+						<Iframe
+							width="900"
+							height="506"
+							src="https://www.youtube.com/embed/kqOA2EJN98k?rel=0&amp;modestbranding=1&amp;controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+							allowfullscreen
+						></Iframe>
+					</VideoWrapper>
+				</div>
+				<ContentTitle title={"Some Frequently Asked Questions"} />
 				{accordionData.map(({ title, content }) => (
 					<Accordion title={title} content={content} />
 				))}
@@ -144,7 +157,7 @@ const FAQContent = () => {
 
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="FAQ" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="FAQ" /> */}
 			<Content prop={contents} />
 		</>
 	);

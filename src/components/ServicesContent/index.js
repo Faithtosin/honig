@@ -11,14 +11,33 @@ import {
 	ListElement,
 	ListWrap,
 	OrderedList,
+	Iframe,
+	VideoWrapper,
+	H3,
 } from "../Common";
-import { Iframe, VideoWrapper } from "./ServicesContentElements";
 
 const ServicesContent = () => {
 	const contents = (
 		<>
-			<ContentTitle title={"We’re Here to Help"} />
 			<MainContent style={{ display: "block" }}>
+				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
+					<VideoWrapper>
+						<Iframe
+							width="900"
+							height="506"
+							src="https://www.youtube.com/embed/JnuEtCuy8lE?playlist=JnuEtCuy8lE&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;rel=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></Iframe>
+					</VideoWrapper>
+				</div>
+				<Paragraph>&nbsp;</Paragraph>
+				<ContentTitle style={{ marginBottom: "8px" }} title={"We’re Here to Help"} />
+				<H3 style={{ marginBottom: "35px", textAlign: "center" }}>
+					How’s Business? Is Your Company Meeting Its Challenges?
+				</H3>
 				<Paragraph>
 					<QuoteImage src={quoteImage} />
 					As a consultant and hands-on advisor, drawing on my background as a CPA, CEO, COO, &amp; CFO, with many years
@@ -76,14 +95,14 @@ const ServicesContent = () => {
 					Still, wondering about the value of a coach? Listen to Harvard Medical School Trained Surgeon &amp; Biden
 					Covid Task Force Member, Atul Gawande:
 				</Paragraph>
-				<VideoWrapper>
+				<VideoWrapper style={{width:"100%", left:"unset"}}>
 					<Iframe
 						width="900"
 						height="506"
-						src="https://www.youtube.com/embed/oHDq1PcYkT4?autoplay=1"
+						src="https://www.youtube.com/embed/oHDq1PcYkT4?rel=0&amp;modestbranding=1"
 						title="YouTube video player"
 						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
 						allowfullscreen
 					></Iframe>
 				</VideoWrapper>
@@ -93,7 +112,7 @@ const ServicesContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="My Services" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="My Services" /> */}
 			<Content prop={contents} />
 		</>
 	);

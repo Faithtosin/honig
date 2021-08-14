@@ -1,11 +1,24 @@
 import EcoBanner from "../EcoBanner";
 import ecoInnerpageImg from "../../media/images/eco_innerpage_banner_bg.jpg";
-import { ReuseableLink, Content, MainContent, Paragraph, H3 } from "../Common";
+import { ReuseableLink, Content, MainContent, Paragraph, H3, VideoWrapper, Iframe } from "../Common";
 
 const TestimonialsContent = () => {
 	const contents = (
 		<>
 			<MainContent style={{ display: "block" }}>
+				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
+					<VideoWrapper style={{ marginBottom: "35px" }}>
+						<Iframe
+							width="900"
+							height="506"
+							src="https://www.youtube.com/embed/q7t3VKZ0TKU?rel=0&amp;modestbranding=1&amp;controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+							allowfullscreen
+						></Iframe>
+					</VideoWrapper>
+				</div>
 				<H3>
 					<strong>CEO (Designs, Manufactures And Distributes LED Green Lighting Solutions)</strong>
 				</H3>
@@ -136,7 +149,7 @@ const TestimonialsContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={ecoInnerpageImg} title="Testimonials" />
+			{/* <EcoBanner imageUrl={ecoInnerpageImg} title="Testimonials" /> */}
 			<Content prop={contents} />
 		</>
 	);

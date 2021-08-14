@@ -43,6 +43,4 @@ export const GifTextItem = styled.p`
 			opacity: 1;
 		}
 	}
-
-	/* line height different at different screen sizes */
 `;

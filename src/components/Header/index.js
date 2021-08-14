@@ -58,9 +58,9 @@ const Header = () => {
 							</Link>
 						</LinkedInIconWrap>
 
-						<SearchButton>
+						{/* <SearchButton>
 							<SearchIcon />
-						</SearchButton>
+						</SearchButton> */}
 					</TopBar>
 
 					<NavigationBar>

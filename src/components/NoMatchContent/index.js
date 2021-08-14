@@ -28,7 +28,7 @@ const NoMatchContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={ecoInnerpageImg} title="404 ERROR PAGE" />
+			{/* <EcoBanner imageUrl={ecoInnerpageImg} title="404 ERROR PAGE" /> */}
 			<Content prop={contents} />
 		</>
 	);

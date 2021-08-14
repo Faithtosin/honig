@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACC,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,gBAAiB,CACjB,sBACD","file":"main.ce15c899.chunk.css","sourcesContent":["* {\n\tbox-sizing: border-box;\n\tmargin: 0;\n\tpadding: 0;\n\tfont-family: Lato;\n\tscroll-behavior: smooth;\n}"]}

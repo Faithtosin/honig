@@ -17,5 +17,8 @@ export {
 	Bdot,
 	List,
 	ListElementDot,
+	VideoWrapper,
+	Iframe,
+	H4,
 } from "./Common";
 export { Content, ReuseableLink, ContentTitle };

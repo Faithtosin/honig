@@ -153,7 +153,7 @@ const CoachingWisdomContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="Coaching Wisdom" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="Coaching Wisdom" /> */}
 			<Content prop={contents} />
 		</>
 	);

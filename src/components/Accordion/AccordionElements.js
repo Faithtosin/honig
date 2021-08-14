@@ -9,12 +9,14 @@ export const AccordionWrap = styled.div`
 
 export const AccordionItem = styled.div`
 	padding-left: 33px;
+	overflow: auto;
+	transition: max-height 0.6s ease;
 `;
 
 export const AccordionTitle = styled.div`
 	cursor: pointer;
 	display: flex;
-  font-weight: 400;
+	font-weight: 400;
 `;
 
 export const Toggle = styled.div`
@@ -25,10 +27,10 @@ export const Toggle = styled.div`
 	text-align: center;
 	cursor: pointer;
 	font-size: 17px;
-  font-weight: 700;;
+	font-weight: 700;
 	color: #fff;
 	margin-right: 11px;
-  align-self: center;
+	align-self: center;
 `;
 
 export const AccordionContent = styled.div`

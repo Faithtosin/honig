@@ -82,7 +82,7 @@ const WhyBusinessesFallShortContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="Why Is Your Company in or Headed to Work-Out?" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="Why Is Your Company in or Headed to Work-Out?" /> */}
 			<Content prop={contents} />
 		</>
 	);

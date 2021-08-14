@@ -8,6 +8,7 @@ import {
 	FooterLogo,
 	FooterRow,
 	FooterWrap,
+	GoToTop,
 } from "./FooterElements";
 
 const address = ["89 needham street, suite 2439", "newton, ma 02461", "617-244-7650", "617-510-8738"];
@@ -26,6 +27,7 @@ const Footer = () => {
 				</Container>
 
 				<FooterCopyright>
+					<GoToTop onClick={() => window.scrollTo(0, 0)}>⌃</GoToTop>
 					<Container>
 						<FooterCopyrightInfo>
 							<FooterCopyrightText>© 2020 Honig &amp; Associates, Inc.</FooterCopyrightText>

@@ -42,13 +42,13 @@ const HomeContent = () => {
 							<Bdot>
 								<List>
 									<ListElementDot>
-										<Link to="/">Thoughts on “Why Businesses Fall Short of their Potential“</Link>
+										<Link to="/why-businesses-fall-short-of-their-potential">Thoughts on “Why Businesses Fall Short of their Potential“</Link>
 									</ListElementDot>
 									<ListElementDot>
-										<Link to="/">Services</Link>
+										<Link to="/my-services">Services</Link>
 									</ListElementDot>
 									<ListElementDot>
-										<Link to="/">FAQs</Link>
+										<Link to="/faq">FAQs</Link>
 									</ListElementDot>
 								</List>
 							</Bdot>

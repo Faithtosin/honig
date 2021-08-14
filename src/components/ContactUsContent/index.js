@@ -49,7 +49,7 @@ const ContactUsContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="Contact Me" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="Contact Me" /> */}
 			<Content prop={contents} />
 		</>
 	);

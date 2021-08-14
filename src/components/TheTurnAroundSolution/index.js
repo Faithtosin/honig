@@ -11,12 +11,27 @@ import {
 	OrderedList,
 	ListElement,
 	H3,
+	VideoWrapper,
+	Iframe,
 } from "../Common";
 
 const TheTurnAroundSolutionContent = () => {
 	const contents = (
 		<>
 			<MainContent style={{ display: "block" }}>
+				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
+					<VideoWrapper style={{ marginBottom: "35px" }}>
+						<Iframe
+							width="900"
+							height="506"
+							src="https://www.youtube.com/embed/9ri8wH1jSjg?rel=0&amp;modestbranding=1&amp;controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+							allowfullscreen
+						></Iframe>
+					</VideoWrapper>
+				</div>
 				<H3 style={{ textAlign: "center" }}>Working Closely With You And Your Team, We Will:</H3>
 				<Paragraph>&nbsp;</Paragraph>
 				<ListWrap>
@@ -58,7 +73,7 @@ const TheTurnAroundSolutionContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" />
+			{/* <EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" /> */}
 			<Content prop={contents} />
 		</>
 	);
