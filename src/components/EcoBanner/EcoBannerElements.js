@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const EcoBannerWrap = styled.div`
-	background: url(${({ imageUrl }) => imageUrl}) rgba(25, 25, 25, 0.8);
+	/* background: url(${({ imageUrl }) => imageUrl}) rgba(25, 25, 25, 0.8); */
 	background-size: cover;
   min-height: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-	padding: 80px 0px 50px;
+	padding: 80px 0px 0px;
 	margin-bottom: 50px;
 `;
 

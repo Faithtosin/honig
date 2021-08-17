@@ -138,7 +138,7 @@ const FAQContent = () => {
 						<Iframe
 							width="900"
 							height="506"
-							src="https://www.youtube.com/embed/kqOA2EJN98k?rel=0&amp;modestbranding=1&amp;controls=0"
+							src="https://www.youtube.com/embed/kqOA2EJN98k?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=kqOA2EJN98k&amp;controls=0"
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
@@ -157,7 +157,7 @@ const FAQContent = () => {
 
 	return (
 		<>
-			{/* <EcoBanner imageUrl={coachingWisdomImg} title="FAQ" /> */}
+			<EcoBanner imageUrl={coachingWisdomImg} title="FAQ" />
 			<Content prop={contents} />
 		</>
 	);

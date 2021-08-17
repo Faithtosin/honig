@@ -11,7 +11,18 @@ const ContactForm = ({ inputElements }) => {
 	};
 	return (
 		<div>
-			<form>
+			<iframe
+				src="https://docs.google.com/forms/d/e/1FAIpQLSe2wWX27TAwUmUersAr_XHxqTCw0LG1HKYKLKkl6zrrsUnc0g/viewform?embedded=true"
+				width="100%"
+				height="1072"
+				frameborder="0"
+				marginheight="0"
+				marginwidth="0"
+				title="Google Forms"
+			>
+				Loading…
+			</iframe>
+			{/* <form>
 				{inputElements.map(({ placeholder, textarea }) =>
 					textarea ? (
 						<TextArea placeholder={placeholder} rows={"10"} style={{ resize: "vertical" }} />
@@ -20,7 +31,7 @@ const ContactForm = ({ inputElements }) => {
 					)
 				)}
 				<Input type={"submit"} value={"SUBMIT"} style={style} />
-			</form>
+			</form> */}
 		</div>
 	);
 };

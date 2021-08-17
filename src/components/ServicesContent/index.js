@@ -112,7 +112,7 @@ const ServicesContent = () => {
 	);
 	return (
 		<>
-			{/* <EcoBanner imageUrl={coachingWisdomImg} title="My Services" /> */}
+			<EcoBanner imageUrl={coachingWisdomImg} title="My Services" />
 			<Content prop={contents} />
 		</>
 	);

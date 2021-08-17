@@ -165,7 +165,7 @@ export const ListElementDot = styled.li`
 export const VideoWrapper = styled.div`
 	margin-bottom: 15px;
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 50%;
 	height: 0;
 
 	width: 300%; /* enlarge beyond browser width */

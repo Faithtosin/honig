@@ -45,7 +45,7 @@ const AboutUsContent = () => {
 
 	return (
 		<>
-			{/* <EcoBanner imageUrl={coachingWisdomImg} title="About Me" /> */}
+			<EcoBanner imageUrl={coachingWisdomImg} title="About Me" />
 			<Content prop={contents} />
 		</>
 	);

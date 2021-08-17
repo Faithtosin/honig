@@ -24,7 +24,7 @@ const TheTurnAroundSolutionContent = () => {
 						<Iframe
 							width="900"
 							height="506"
-							src="https://www.youtube.com/embed/9ri8wH1jSjg?rel=0&amp;modestbranding=1&amp;controls=0"
+							src="https://www.youtube.com/embed/9ri8wH1jSjg?rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=9ri8wH1jSjg"
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
@@ -73,7 +73,7 @@ const TheTurnAroundSolutionContent = () => {
 	);
 	return (
 		<>
-			{/* <EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" /> */}
+			<EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" />
 			<Content prop={contents} />
 		</>
 	);
