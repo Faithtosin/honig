@@ -19,9 +19,13 @@ export const HeroAnimation = styled.div`
 	}
 `;
 
-export const GifTextOverlayWrap = styled.div``;
+export const GifTextOverlayWrap = styled.div`
+	min-height: 213px;
+`;
 
 export const GifText = styled.div`
+	padding-top: 60px;
+	
 	@media screen and (min-width: 480px) {
 		padding: 200px 0;
 	}

@@ -1,7 +1,8 @@
 import EcoBanner from "../EcoBanner";
 import coachingWisdomImg from "../../media/images/Coaching-Wisdom-Copy-1.jpg";
-import { ReuseableLink, Content, ContentTitle, Paragraph, MainContent, H4, VideoWrapper, Iframe } from "../Common";
+import { ReuseableLink, Content, ContentTitle, Paragraph, MainContent, H4, VideoWrapper } from "../Common";
 import Accordion from "../Accordion";
+import IframeAutoStart from "../IframeAutoStart";
 
 const FAQContent = () => {
 	const accordionData = [
@@ -135,15 +136,7 @@ const FAQContent = () => {
 			<MainContent style={{ flexDirection: "column" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper style={{ marginBottom: "35px" }}>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/kqOA2EJN98k?rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=kqOA2EJN98k&amp;controls=0"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"kqOA2EJN98k"} />
 					</VideoWrapper>
 				</div>
 				<ContentTitle title={"Some Frequently Asked Questions"} />

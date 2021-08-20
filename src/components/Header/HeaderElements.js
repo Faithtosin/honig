@@ -3,6 +3,7 @@ import { NavLink as LinkRouter } from "react-router-dom";
 import { LinkedinIn } from "@styled-icons/fa-brands";
 import { Search } from "@styled-icons/evaicons-solid";
 import { DropDownWrapper } from "../DropDown/DropDownElements";
+import { Menu } from "@styled-icons/evaicons-solid";
 
 export const HeaderTag = styled.header``;
 
@@ -51,6 +52,14 @@ export const SearchIcon = styled(Search)`
 	color: #487e04;
 `;
 
+export const MobileMenuBar = styled(Menu)`
+	width: auto;
+
+	@media screen and (min-width: 992px) {
+		display: none;
+	}
+`;
+
 export const SearchButton = styled.button`
 	cursor: pointer;
 	background: transparent none repeat scroll 0 0;
@@ -59,8 +68,10 @@ export const SearchButton = styled.button`
 `;
 
 export const NavigationBar = styled.div`
-	@media screen and (max-width: 992px) {
-		display: none;
+	display: none;
+	
+	@media screen and (min-width: 992px) {
+		display: block;
 	}
 `;
 

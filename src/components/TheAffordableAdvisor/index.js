@@ -15,8 +15,8 @@ import {
 	ListElementDot,
 	List,
 	VideoWrapper,
-	Iframe,
 } from "../Common";
+import IframeAutoStart from "../IframeAutoStart";
 
 const TheAffordableAdvisorContent = () => {
 	const contents = (
@@ -24,15 +24,7 @@ const TheAffordableAdvisorContent = () => {
 			<MainContent style={{ display: "block" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper style={{ marginBottom: "35px" }}>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/UAUgacN-5QA?rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=UAUgacN-5QA"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"UAUgacN-5QA"} />
 					</VideoWrapper>
 				</div>
 				<ContentTitle style={{ marginBottom: "8px" }} title={"TAA Program Is A Three Step Process:"} />
@@ -163,7 +155,7 @@ const TheAffordableAdvisorContent = () => {
 	);
 	return (
 		<>
-			<EcoBanner imageUrl={coachingWisdomImg} title="The Turnaround Solution" />
+			<EcoBanner imageUrl={coachingWisdomImg} title="The Affordable Advisor (TAA) Program" />
 			<Content prop={contents} />
 		</>
 	);

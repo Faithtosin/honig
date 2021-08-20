@@ -13,8 +13,8 @@ import {
 	ListElement,
 	Link,
 	VideoWrapper,
-	Iframe,
 } from "../Common";
+import IframeAutoStart from "../IframeAutoStart";
 
 const WhyBusinessesFallShortContent = () => {
 	const contents = (
@@ -22,15 +22,7 @@ const WhyBusinessesFallShortContent = () => {
 			<MainContent style={{ display: "block" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper style={{ marginBottom: "35px" }}>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/82T1gZBbGjY?rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=82T1gZBbGjY"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"82T1gZBbGjY"} />
 					</VideoWrapper>
 				</div>
 				<Paragraph>

@@ -15,6 +15,7 @@ import {
 	VideoWrapper,
 	H3,
 } from "../Common";
+import IframeAutoStart from "../IframeAutoStart";
 
 const ServicesContent = () => {
 	const contents = (
@@ -22,15 +23,7 @@ const ServicesContent = () => {
 			<MainContent style={{ display: "block" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/JnuEtCuy8lE?playlist=JnuEtCuy8lE&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;rel=0"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"JnuEtCuy8lE"} />
 					</VideoWrapper>
 				</div>
 				<Paragraph>&nbsp;</Paragraph>
@@ -95,7 +88,7 @@ const ServicesContent = () => {
 					Still, wondering about the value of a coach? Listen to Harvard Medical School Trained Surgeon &amp; Biden
 					Covid Task Force Member, Atul Gawande:
 				</Paragraph>
-				<VideoWrapper style={{width:"100%", left:"unset"}}>
+				<VideoWrapper style={{ width: "100%", left: "unset", paddingBottom: "56.25%" }}>
 					<Iframe
 						width="900"
 						height="506"

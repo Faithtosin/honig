@@ -62,6 +62,11 @@ export const H2 = styled.h2`
 	letter-spacing: 0.2px;
 	line-height: 37px;
 	font-style: normal;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+		line-height: unset;
+	}
 `;
 
 export const H3 = styled.h3`
@@ -168,8 +173,8 @@ export const VideoWrapper = styled.div`
 	padding-bottom: 50%;
 	height: 0;
 
-	width: 300%; /* enlarge beyond browser width */
-	left: -100%; /* center */
+	width: 300%;
+	left: -100%;
 `;
 
 export const Iframe = styled.iframe`

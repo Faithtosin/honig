@@ -21,4 +21,13 @@ export const EcoBannerTitle = styled.h3`
   letter-spacing: 0.2px;
   color: #388bff!important;
   font-weight: bold!important;
+
+	@media screen and (max-width: 768px) {
+    font-size: 36px;
+	}
+
+  @media screen and (max-width: 480px) {
+    font-size: 27px;
+    line-height: 48px;
+	}
 `;

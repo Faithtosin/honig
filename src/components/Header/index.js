@@ -15,30 +15,15 @@ import {
 	NavMenu,
 	NavItem,
 	NavItemLink,
+	MobileMenuBar,
 } from "./HeaderElements";
 import DropDown from "../DropDown";
-
-const menuItems = [
-	{ title: "home", to: "/" },
-	{ title: "about me", to: "/about-us" },
-	{ title: "my services", to: "/my-services" },
-	{
-		title: "shortcuts",
-		to: "#",
-		dropDownContent: [
-			{ label: "Why Businesses Fall Short Of Their Potential", to: "/why-businesses-fall-short-of-their-potential" },
-			{ label: "Why Is Your Company in or Headed to Work-Out?", to: "/why-is-your-company-in-or-headed-to-work-out" },
-			{ label: "The Turnaround Solution", to: "/the-turnaround-solution-the-path-to-a-successful-turnaround" },
-			{ label: "The Affordable Advisor (TAA) Program", to: "/the-affordable-advisor-taa-program" },
-		],
-	},
-	{ title: "faqs", to: "/faq" },
-	{ title: "coaching wisdom", to: "/coaching-wisdom" },
-	{ title: "testimonials", to: "/testimonials" },
-	{ title: "contact", to: "/contact-us" },
-];
+import { useState } from "react";
+import MobileMenu from "../MobileMenu";
+import { menuItems } from "../../utils/MenuData";
 
 const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
 	const activeStyle = { backgroundColor: "#000" };
 	const { pathname } = useLocation();
 	return (
@@ -61,6 +46,10 @@ const Header = () => {
 						{/* <SearchButton>
 							<SearchIcon />
 						</SearchButton> */}
+
+						<SearchButton onClick={() => setIsOpen(!isOpen)}>
+							<MobileMenuBar />
+						</SearchButton>
 					</TopBar>
 
 					<NavigationBar>
@@ -79,6 +68,7 @@ const Header = () => {
 							</NavMenu>
 						</nav>
 					</NavigationBar>
+					{isOpen && <MobileMenu />}
 				</Container>
 			</HeaderTag>
 		</>

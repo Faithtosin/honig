@@ -1,4 +1,6 @@
 import { Input, TextArea } from "./ContactFormElements";
+import axios from "axios";
+import { useAlert } from "react-alert";
 
 const ContactForm = ({ inputElements }) => {
 	const style = {
@@ -9,30 +11,41 @@ const ContactForm = ({ inputElements }) => {
 		fontWeight: "700",
 		padding: "8px 10px 7px",
 	};
+
+	const sendTo = "tthesis007@gmail.com";
+
+	const alert = useAlert();
+
+	const onSubmit = (e) => {
+		e.preventDefault();
+		const { name, email, phone, subject, message } = e.target;
+		axios.defaults.headers.post["Content-Type"] = "application/json";
+		axios
+			.post(`https://formsubmit.co/ajax/${sendTo}`, {
+				name: name.value,
+				email: email.value,
+				phone: phone.value,
+				subject: subject.value,
+				message: message.value,
+			})
+			.then((response) => {
+				document.getElementById("contact-form").reset();
+				alert.success(response.data.message);
+			})
+			.catch((error) => alert.error("Something went wrong"));
+	};
+
 	return (
-		<div>
-			<iframe
-				src="https://docs.google.com/forms/d/e/1FAIpQLSe2wWX27TAwUmUersAr_XHxqTCw0LG1HKYKLKkl6zrrsUnc0g/viewform?embedded=true"
-				width="100%"
-				height="1072"
-				frameborder="0"
-				marginheight="0"
-				marginwidth="0"
-				title="Google Forms"
-			>
-				Loading…
-			</iframe>
-			{/* <form>
-				{inputElements.map(({ placeholder, textarea }) =>
-					textarea ? (
-						<TextArea placeholder={placeholder} rows={"10"} style={{ resize: "vertical" }} />
-					) : (
-						<Input type={"text"} placeholder={placeholder} />
-					)
-				)}
-				<Input type={"submit"} value={"SUBMIT"} style={style} />
-			</form> */}
-		</div>
+		<form onSubmit={(e) => onSubmit(e)} id="contact-form">
+			{inputElements.map(({ placeholder, textarea, label }) =>
+				textarea ? (
+					<TextArea placeholder={placeholder} name={label} rows={"10"} style={{ resize: "vertical" }} required />
+				) : (
+					<Input key={placeholder} type={label} name={label} placeholder={placeholder} required />
+				)
+			)}
+			<Input type="submit" value="SUBMIT" style={style} />
+		</form>
 	);
 };
 

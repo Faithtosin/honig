@@ -12,8 +12,8 @@ import {
 	ListElement,
 	H3,
 	VideoWrapper,
-	Iframe,
 } from "../Common";
+import IframeAutoStart from "../IframeAutoStart";
 
 const TheTurnAroundSolutionContent = () => {
 	const contents = (
@@ -21,15 +21,7 @@ const TheTurnAroundSolutionContent = () => {
 			<MainContent style={{ display: "block" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper style={{ marginBottom: "35px" }}>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/9ri8wH1jSjg?rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=9ri8wH1jSjg"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"9ri8wH1jSjg"} />
 					</VideoWrapper>
 				</div>
 				<H3 style={{ textAlign: "center" }}>Working Closely With You And Your Team, We Will:</H3>

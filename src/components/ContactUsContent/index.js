@@ -8,11 +8,11 @@ const ContactUsContent = () => {
 	const pStyle = { display: "flex" };
 	const linkStyle = { padding: "0" };
 	const inputElements = [
-		{ placeholder: "Name" },
-		{ placeholder: "Email" },
-		{ placeholder: "Phone" },
-		{ placeholder: "Subject" },
-		{ placeholder: "Message", textarea: true },
+		{ placeholder: "Name", label: "name" },
+		{ placeholder: "Email", label: "email" },
+		{ placeholder: "Phone", label: "phone" },
+		{ placeholder: "Subject", label: "subject" },
+		{ placeholder: "Message", textarea: true, label: "message" },
 	];
 	const contents = (
 		<>

@@ -1,11 +1,11 @@
 import { DropDownWrapper, DropDownLink } from "./DropDownElements";
 
-const DropDown = ({ dropDownContent }) => {
+const DropDown = ({ dropDownContent, style }) => {
 	return (
 		<>
-			<DropDownWrapper>
+			<DropDownWrapper style={style}>
 				{dropDownContent.map(({ label, to }) => (
-					<DropDownLink activeStyle={{ backgroundColor: "#000", color:"#fff" }} to={to}>
+					<DropDownLink activeStyle={{ backgroundColor: "#000", color: "#fff" }} to={to}>
 						{label}
 					</DropDownLink>
 				))}

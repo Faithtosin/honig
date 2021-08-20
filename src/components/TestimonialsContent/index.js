@@ -1,6 +1,7 @@
 import EcoBanner from "../EcoBanner";
 import ecoInnerpageImg from "../../media/images/eco_innerpage_banner_bg.jpg";
-import { ReuseableLink, Content, MainContent, Paragraph, H3, VideoWrapper, Iframe } from "../Common";
+import { ReuseableLink, Content, MainContent, Paragraph, H3, VideoWrapper } from "../Common";
+import IframeAutoStart from "../IframeAutoStart";
 
 const TestimonialsContent = () => {
 	const contents = (
@@ -8,15 +9,7 @@ const TestimonialsContent = () => {
 			<MainContent style={{ display: "block" }}>
 				<div style={{ overflow: "hidden", maxWidth: "100%" }}>
 					<VideoWrapper style={{ marginBottom: "35px" }}>
-						<Iframe
-							width="900"
-							height="506"
-							src="https://www.youtube.com/embed/q7t3VKZ0TKU?rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=q7t3VKZ0TKU"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-							allowfullscreen
-						></Iframe>
+						<IframeAutoStart videoId={"q7t3VKZ0TKU"} />
 					</VideoWrapper>
 				</div>
 				<H3>
