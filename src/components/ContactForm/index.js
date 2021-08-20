@@ -12,7 +12,7 @@ const ContactForm = ({ inputElements }) => {
 		padding: "8px 10px 7px",
 	};
 
-	const sendTo = "tthesis007@gmail.com";
+	const sendTo = "ross29@msn.com";
 
 	const alert = useAlert();
 
@@ -32,7 +32,7 @@ const ContactForm = ({ inputElements }) => {
 				document.getElementById("contact-form").reset();
 				alert.success(response.data.message);
 			})
-			.catch((error) => alert.error("Something went wrong"));
+			.catch((error) => (alert.error("Something went wrong, retry later")));
 	};
 
 	return (
