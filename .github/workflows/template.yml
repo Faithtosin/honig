@@ -14,7 +14,9 @@ jobs:
     name: Pass input  my-action
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout1
+        uses: actions/checkout@v2
+      - name: Checkout2
         uses: actions/checkout@v2
         with:
           repository: Faithtosin/honig
@@ -22,6 +24,6 @@ jobs:
           path: honig
         
       - run: echo "${{ inputs.username }} and ${{ inputs.env }}" 
-      - run: ls -la && pwd && cd .. && ls -l
+      - run: ls -la && pwd
         name: Check files in repo
       - run: sudo apt-get install tree && tree /home/runner/work
