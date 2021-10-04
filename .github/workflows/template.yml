@@ -19,6 +19,8 @@ jobs:
         with:
           repository: Faithtosin/honig
           ref: master
+      - name: Checkout2
+        uses: actions/checkout@v2
         
       - run: echo "${{ inputs.username }} and ${{ inputs.env }}" 
       - run: ls -la 
