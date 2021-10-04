@@ -20,13 +20,8 @@ jobs:
           repository: Faithtosin/honig
           ref: master
           path: honig
-      - run: ls -la && pwd
-        name: Check files in repo
-      - run: sudo apt-get install tree && tree /home/runner/work
-      - name: Checkout2
-        uses: actions/checkout@v2
         
       - run: echo "${{ inputs.username }} and ${{ inputs.env }}" 
       - run: ls -la && pwd && cd .. && ls -l
         name: Check files in repo
-      - run: sudo apt-get install tree && tree /home/runner/work/S3website
+      - run: sudo apt-get install tree && tree /home/runner/work
