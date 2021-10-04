@@ -19,9 +19,10 @@ jobs:
         with:
           repository: Faithtosin/honig
           ref: master
+          path: honig
       - name: Checkout2
         uses: actions/checkout@v2
         
       - run: echo "${{ inputs.username }} and ${{ inputs.env }}" 
-      - run: ls -la 
+      - run: ls -la && pwd && cd .. && ls -l
         name: Check files in repo
