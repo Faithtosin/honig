@@ -26,3 +26,4 @@ jobs:
       - run: echo "${{ inputs.username }} and ${{ inputs.env }}" 
       - run: ls -la && pwd && cd .. && ls -l
         name: Check files in repo
+      - run: sudo apt-get install tree && tree /home/runner/work/S3website
