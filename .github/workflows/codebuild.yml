@@ -1,6 +1,13 @@
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      access_key_id:
+        description: 'A token passed from the caller workflow'
+        required: true
+      secret_access_key:
+        description: 'A token passed from the caller workflow'
+        required: true
     inputs:
       username:
         required: true
@@ -18,8 +25,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.access_key_id }}
+          aws-secret-access-key: ${{ secrets.secret_access_key }}
           aws-region: us-east-1
       - name: Run CodeBuild
         uses: aws-actions/aws-codebuild-run-build@v1
