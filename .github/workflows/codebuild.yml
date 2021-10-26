@@ -38,23 +38,23 @@ jobs:
       run: ls -la
     - name: check at the back
       run: cd .. &&  ls -la
-  # example_job:
-  #   name: Pass input  my-action
-  #   needs: Get-build-spec
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Dump GitHub context
-  #       env:
-  #         GITHUB_CONTEXT: ${{ toJson(github) }}
-  #       run: echo "$GITHUB_CONTEXT" 
-  #     - name: Configure AWS credentials
-  #       uses: aws-actions/configure-aws-credentials@v1
-  #       with:
-  #         aws-access-key-id: ${{ secrets.access_key_id }}
-  #         aws-secret-access-key: ${{ secrets.secret_access_key }}
-  #         aws-region: us-east-1
-  #     - name: Run CodeBuild
-  #       uses: aws-actions/aws-codebuild-run-build@v1
-  #       with:
-  #         project-name: codebuild-github-action
-  #         buildspec-override: ${{ github.event.inputs.username }}
+  example_job:
+    name: Pass input  my-action
+    needs: Get-build-spec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT" 
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.access_key_id }}
+          aws-secret-access-key: ${{ secrets.secret_access_key }}
+          aws-region: us-east-1
+      - name: Run CodeBuild
+        uses: aws-actions/aws-codebuild-run-build@v1
+        with:
+          project-name: codebuild-github-action
+          buildspec-override: ${{ github.event.inputs.username }}
