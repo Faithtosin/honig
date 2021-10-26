@@ -18,8 +18,24 @@ on:
 
 
 jobs:
+
+  Get-build-spec:
+    name: Build-step
+    runs-on: ubuntu-latest
+    if: github.actor == 'Faithtosin'
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        repository: Faithtosin/honig
+        ref: master
+        token: ${{ secrets.TOKEN }}
+    - name: check files
+      run: ls -la
   example_job:
     name: Pass input  my-action
+    needs: Get-build-spec
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
