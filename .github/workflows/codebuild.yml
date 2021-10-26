@@ -8,6 +8,9 @@ on:
       secret_access_key:
         description: 'A token passed from the caller workflow'
         required: true
+      TOKEN:
+        description: 'A token passed from the caller workflow'
+        required: true
     inputs:
       username:
         required: true
